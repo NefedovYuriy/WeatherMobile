@@ -1,0 +1,20 @@
+.weather__content-city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #292e44;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.weather__content-city-time, 
+.weather__content-city-name {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.weater__content-city-temperature {
+    font-size: 20px;
+    line-height: 24px;
+}
