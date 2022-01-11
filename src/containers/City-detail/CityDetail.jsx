@@ -24,10 +24,10 @@ export const CityDetail = () => {
             />
           </div>
           <div className="city-detail__pressure">
-            {Math.trunc(cityData.main.pressure * 0.750064)} мм рт.ст.
+            {Math.trunc(cityData.main.pressure * 0.750064)} mmHg.
           </div>
           <div className="city-detail__sunset">
-            Закат в{" "}
+            Sunset at{" "}
             {moment(new Date(cityData.sys.sunset * 1000)).format("HH:mm")}
           </div>
         </div>
