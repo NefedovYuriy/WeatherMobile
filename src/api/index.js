@@ -1,2 +1,2 @@
-export { GetAllCitiesAPI } from './GetAllCitiesAPI';
-export { GetCityDataAPI } from './GetCityDataAPI';
+export { GetAllCitiesAPI } from "./GetAllCitiesAPI";
+export { GetCityDataAPI } from "./GetCityDataAPI";

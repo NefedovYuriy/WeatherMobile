@@ -4,19 +4,17 @@ import { ListItem, Search } from "../../components";
 import { AppContext } from "../../context/AppContext";
 
 export const Home = () => {
+  const { cities } = useContext(AppContext);
 
-    const {cities} = useContext(AppContext)
+  const renderItems = useMemo(
+    () => cities.map((item) => <ListItem data={item} key={item.name} />),
+    [cities]
+  );
 
-    const renderItems = useMemo(() => 
-        cities.map((item) => <ListItem data={item} key={item.name} />)
-    , [cities])
-
-    return (
-        <div className="flex">
-            <Search />
-            {
-                renderItems
-            }
-        </div>
-    )
-}
+  return (
+    <div className="flex">
+      <Search />
+      {renderItems}
+    </div>
+  );
+};

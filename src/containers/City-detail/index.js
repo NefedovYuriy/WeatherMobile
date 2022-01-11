@@ -1,1 +1,1 @@
-export {CityDetail} from "./CityDetail"
+export { CityDetail } from "./CityDetail";
